@@ -26,7 +26,8 @@
                 <Entry
                     Grid.Row="0"
                     Grid.Column="1"
-                    Placeholder="Ingrese el correo">
+                    Placeholder="Ingrese el correo"
+                    Text="{Binding Email, Mode=TwoWay}">
                 </Entry>
                 <Label
                     Grid.Row="1"
@@ -38,10 +39,12 @@
                     Grid.Row="1"
                     Grid.Column="1"
                     IsPassword="True"
-                    Placeholder="Ingrese su clave">
+                    Placeholder="Ingrese su clave"
+                    Text="{Binding Password, Mode=TwoWay}">
                 </Entry>
             </Grid>
-            <ActivityIndicator>
+            <ActivityIndicator
+                 IsRunning="{Binding IsRunning }">
             </ActivityIndicator>
             <Button
                 Text="Login"
