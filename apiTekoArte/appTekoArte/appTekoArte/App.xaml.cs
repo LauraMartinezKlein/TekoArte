@@ -13,7 +13,7 @@ namespace appTekoArte
             InitializeComponent();
 
             //MainPage = new MainPage();
-            MainPage = new TekoArtePage();
+            MainPage = new TekoArteLoginPage();
         }
 
         protected override void OnStart()
